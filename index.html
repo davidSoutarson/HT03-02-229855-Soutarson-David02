@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Ubuntu?selection.family=Ubuntu">
+  <title>Html avencé: devoir 2 Une page responsive</title>
+
+</head>
+
+<body>
+
+  <header id="top">
+    <!-- NOTE :
+    - <header> devrait être en dehors de div#wrapper pour que le rendu soit conforme sur toutes les vues.
+    ==> Actuellement sur mobile, le header est redimensionné et ce n'est pas souhaité.
+  -->
+
+  <!-- NOTE :
+  cette partie doit être centrée verticalement dans header
+
+-->
+<div class=" boxtitre">
+  <h1>d-angle</h1>
+  <p>responsive answer</p>
+</div>
+<!-- positon sur les div ?? -->
+<div id="bouton-menu"> <a class="texham" href="#main-nav"  > <span class="ham"> </span> Menu  </a> </div>
+
+<nav class="menu-plein-ecran" id="main-nav" >
+
+  <div id="bouton-menu"> <a  class="texham" href="#top"> <span class="ham"> </span> Fermer  </a> </div>
+
+
+
+  <ul class="item-menu">
+    <li class="item"><a href="#" >Projets</a></li>
+    <li class="item"><a href="#" >pricing</a></li>
+    <li class="item"><a href="#" >Tower</a></li>
+    <li class="item"><a href="#" >Contacts</a></li>
+  </ul>
+
+
+
+</nav>
+
+</header>
+
+<!-- NOTE : menu fait
+- le menu ne devrait s'afficher qu'au clic sur "Menu + icone burg"
+- la croix permettant de fermer le menu est manquante
+=> Il est nécessaire d'utiliser des ancres ainsi que la pseudo class :target pour parvenir à la mécanique
+
+- Lorsque le menu est affiché, il doit occuper tout l'écran.
+=> La position fixed est donc necessaire sur la partie verte.
+-->
+
+
+
+
+<div id="wrapper">
+
+  <!-- NOTE : <main> doit occuper max 1200px -->
+  <main>
+
+    <!-- NOTE : englobez tous vos articles dans une <section> fait !!!-->
+    <section>
+
+
+      <article class="ar-1">
+        <img class="colImag" src="img/img-01.jpg" alt="les chaise">
+        <h2> Aliquan conditimentum</h2>
+        <p class="text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proiden
+          sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <a href="#" class="suite">lire la suite :</a>
+        </p>
+        <!-- NOTE :
+        FAIT !!!
+        le hover laissant apparaitre plus de contenu n'est pas demandé, de plus ce n'est pas très ergnomique.
+        // remarque valable pour les autres articles: fait !!!
+
+      -->
+
+    </article>
+
+    <article class="ar-2 ">
+      <img class="colImag" src="img/img-02.jpg" alt="porte">
+      <h2>Sed nec lacus id emin porta </h2>
+      <p class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <a href="#" class="suite">lire la suite :</a>
+      </p>
+
+    </article>
+
+    <article class="ar-3 ">
+
+      <img class="colImag" src="img/img-03.jpg" alt=" mosayque">
+
+      <h2>Phasellus nom leo porta</h2>
+      <p class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <a href="#" class="suite">lire la suite :</a>
+      </p>
+
+
+    </article>
+
+    <article class="ar-4">
+
+      <img class="colImag" src="img/img-04.jpg" alt="velo acrocher au poteau">
+      <h2>Proin nibn lacus</h2>
+      <p class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <a href="#" class="suite">lire la suite :</a>
+      </p>
+
+
+    </article>
+    <article class="ar-5">
+
+      <img class="colImag" src="img/img-05.jpg" alt="ipstere epe">
+
+      <h2>Phasellus nos leo pota</h2>
+      <p class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <a href="#" class="suite">lire la suite :</a>
+      </p>
+
+
+    </article>
+
+    <article class="ar-6">
+
+      <img class="colImag " src="img/img-06.jpg" alt=" rout de camion">
+
+      <h2>Phaselluta</h2>
+      <p class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <a href="#" class="suite">lire la suite :</a>
+      </p>
+
+
+    </article>
+
+    <article class="ar-7">
+
+      <img class="colImag" src="img/img-07.jpg" alt="main et ca silouette">
+
+      <h2>Prus</h2>
+      <p class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <a href="#" class="suite">lire la suite :</a>
+      </p>
+
+
+    </article>
+    <article class="ar-8">
+
+      <img class="colImag" src="img/img-08.jpg" alt=" cople de pigeon">
+      <h2>Phasorta</h2>
+      <p class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <a href="#" class="suite">lire la suite :</a>
+      </p>
+
+
+    </article>
+    <article class="ar-9">
+
+      <img class="colImag" src="img/img-09.jpg" alt="home au chapeau">
+      <h2>Prota</h2>
+      <p class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <a href="#" class="suite">lire la suite :</a> </p>
+
+    </article>
+
+  </section>
+
+  <section>
+    <!-- NOTE :
+    - le formulaire devrait être dans une <section>, idéalement positionnez la dans <main> :fais !!!
+    - l'image doit occuper toute la largeur, le formulaire doit être centré et faire max 900px
+    - la couleur de fond du formulaire n'est pas présente :?????couleur de font
+  -->
+  <form class="imageform" action="post">
+
+
+    <fieldset>
+
+      <!-- NOTE : div non utile :fais!!!-->
+
+      <!-- NOTE : reservez le <h1> pour le titre principal de votre page fais !!!-->
+      <h2 class="titreformulaire">Contactez-nous</h2>
+
+
+
+      <div class="boxtexteform">
+        <div class="cc">
+
+          <label class="textformulaire" for="nom">Nom*:</label>
+          <input id="nom" type="text" name="nom" value="" placeholder="Entrez votre nom">
+
+          <label class="textformulaire" for="email">Email*:</label>
+          <input id="email" type="email" name="email" value="" placeholder="Votre Email">
+
+        </div>
+
+
+        <div class="cc">
+
+          <label class="textformulaire" for="tel">Telephone:</label>
+          <input id="tel" type="tel" name="tel" value="" placeholder="Indiquez votre numero de Telephone">
+
+          <label class="textformulaire" for="message">Message:</label>
+          <textarea id="message" name="message" rows="8" cols="80" placeholder="Laicez nous un message"></textarea>
+
+        </div>
+      </div>
+
+      <div class="boxbouton">
+        <!-- NOTE :
+        - premier bouton ok, c'est un bouton de soumission de formulaire
+        - deuxième bouton non, c'est un bouton de reset
+
+        - L'aspect des deux boutons n'est pas forme à la demande et les hovers n'ont pas été réalisés.
+
+        - Les boutons devrait s'empiler dès le format moyen fait !!!
+      -->
+      <input class="bouton" type="submit" name="Envoyer" value="Envoyer">
+      <input class="bouton2" type="reset" name="Resete" value="Resete">
+
+    </div>
+
+
+  </fieldset>
+
+</form>
+
+
+</section>
+
+</main>
+
+<!-- case a cocher 14 repatie trois conlone 5 5 4 centre  -->
+<!-- NOTE :
+
+- le formulaire doit se terminer après <fieldset>, il ne doit pas contenir la partie ci-dessous :fait !!!
+
+- l'écart avec le bloc précédent est trop grand: fais!!!
+- utiliser des inputs hors d'un formulaire n'a pas d'intérêt :fais!!!
+=> retirez les inputs et les labels  :fais!!!  et créez les cases en CSS :fais !!!
+-->
+
+<!-- NOTE :
+
+<footer> doit occuper max 1200px :fais!!! -->
+<footer >
+
+  <ul class="check-1">
+    <li><a>Responsive Disagne</a> </li>
+    <li><a>Smartpones</a></li>
+    <li><a>Grid fluides</a></li>
+    <li><a>Media queri portrait</a></li>
+    <li><a>Typographie Responsive</a></li>
+  </ul>
+  <ul class="check-2">
+    <li><a>Principes</a></li>
+    <li><a>Ecrant</a></li>
+    <li><a>Media fluides</a></li>
+    <li><a>Landscape</a></li>
+    <li><a>Pourcentages</a></li>
+  </ul>
+  <ul class="check-3">
+    <li><a>Atelier Design</a></li>
+    <li><a>Points de rupture</a></li>
+    <li><a>Media quierie</a></li>
+    <li><a>Un formulaire responsive</a></li>
+  </ul>
+
+</footer>
+
+</body>
+
+</html>
