@@ -50,7 +50,8 @@ des media queries, ainsi qu’un menu de navigation fonctionnel sur mobile.
 
 - Google Fonts (Ubuntu)
 
-- Instructions pour l’utilisation
+## Instructions pour l’utilisation
+
 1. Cloner ou télécharger le projet.
 
 2. Ouvrir le fichier index.html dans un navigateur moderne (Chrome, Firefox, Edge...).
