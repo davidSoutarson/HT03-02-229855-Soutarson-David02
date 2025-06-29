@@ -39,7 +39,9 @@ des media queries, ainsi qu’un menu de navigation fonctionnel sur mobile.
 
 - css/master.css : Feuille de styles principale avec la mise en page responsive.
 
-- img/ : Dossier contenant les images utilisées dans les articles et le fond.
+- img/ : Dossier contenant les images utilisées dans les articles.
+
+- font/ : contenant les différentes polices "Google Fonts (Ubuntu)" utilisées dans ce projet.
 
 ## Technologies utilisées
 - HTML5
